@@ -1,28 +1,67 @@
-import React from "react";
-import { View } from "react-native";
-
-/*
-    DESAFIO 06
-    Projeto: app002_View_06
-*/
+import React from 'react';
+import { View, Text } from 'react-native';
 
 export default function App() {
+  const hoje = new Date();
+  const dataFormatada = hoje.toLocaleDateString('pt-BR');
+
   return (
-    <View style={{ flex: 1 }}>
+    <View
+      style={{
+        backgroundColor: '#9ACD32', // verde (fundo)
+        width: 260,
+        height: 520,
+        padding: 15,
+      }}
+    >
+      {/* Topo vermelho arredondado */}
+      <View
+        style={{
+          backgroundColor: 'red',
+          width: '100%',
+          height: 90,
+          borderColor: 'black',
+          borderWidth: 3,
+          borderTopLeftRadius: 18,
+          borderTopRightRadius: 18,
+          padding: 10,
+        }}
+      >
+        <Text style={{ color: 'black' }}>COMPONENTE VIEW</Text>
+      </View>
 
-      {/* View Vermelha */}
-      <View style={{ flex: 1, backgroundColor: 'red' }} />
+      {/* Caixa amarela "CONTEÚDO" */}
+      <View
+        style={{
+          backgroundColor: 'yellow',
+          width: '100%',
+          height: 290,
+          borderColor: 'black',
+          borderWidth: 3,
+          marginTop: 15,
+          padding: 12,
+        }}
+      >
+        <Text style={{ fontSize: 22, color: 'black' }}>CONTEÚDO</Text>
+      </View>
 
-      {/* View Laranja */}
-      <View style={{ flex: 2, backgroundColor: 'orange' }} />
-
-      {/* View Verde */}
-      <View style={{ flex: 3, backgroundColor: 'green' }} />
-
+      {/* Rodapé cinza arredondado */}
+      <View
+        style={{
+          backgroundColor: 'lightgray',
+          width: '100%',
+          height: 75,
+          borderColor: 'black',
+          borderWidth: 3,
+          borderBottomLeftRadius: 18,
+          borderBottomRightRadius: 18,
+          marginTop: 15,
+          padding: 10,
+        }}
+      >
+        <Text style={{ color: 'black' }}>Kawan Victor Cavalcante</Text>
+        <Text style={{ color: 'black' }}>{dataFormatada}</Text>
+      </View>
     </View>
   );
 }
-
-
-
-expo init appview05
