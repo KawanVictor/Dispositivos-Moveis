@@ -5,11 +5,11 @@ export default function App() {
   return (
     <View style={{ flex: 1, flexDirection: 'row' }}>
 
-      <View style={{ flex: 2, backgroundColor: 'red' }} />
+      <View style={{ flex: 3, backgroundColor: '#1eb318' }} />
 
-      <View style={{ flex: 4, backgroundColor: 'darkorange' }} />
+      <View style={{ flex: 4, backgroundColor: '#0000' }} />
 
-      <View style={{ flex: 5, backgroundColor: 'green' }} />
+      <View style={{ flex: 3, backgroundColor: '#1eb318' }} />
 
     </View>
   );
