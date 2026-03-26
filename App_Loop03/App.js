@@ -6,7 +6,7 @@ function App() {
   let elemento = [];
   let i = 0;
 
-  const AUTOR = "Luiz Fernando Corcini";
+  const AUTOR = "Kawan Victor Cavalcante";
   const DATA = "03/2026";
 
   let ArrayNomes = [
